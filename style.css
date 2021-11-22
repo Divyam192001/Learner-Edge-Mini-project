@@ -49,13 +49,15 @@ th,td {padding:15px; text-align:left;}
 /*--------  FIRST UPPER NAV USING LIST -------*/
 
 ul {
-list-style: none; /* make list horizontal and remove dots */
-background-image: linear-gradient(to right,  yellow  0%, #FFEF3C 99%);
-height: 20px;  line-height: 20px;
-font-size: 12px; font-family: arial;
-padding-left: 20px;
+  list-style: none;
+  background-image: linear-gradient(to right, white 0%, #FFEF3C00 99%);
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: arial;
+  padding-left: 20px;
 }
-.uppertablinks a { float: left; padding: 0px 5px; text-decoration: none;}
+.uppertablinks a { float: left; padding: 0px 20px; text-decoration:#232327bf;}
 
 
 /*-----------------------------------------------------*/
@@ -70,7 +72,7 @@ padding-left: 20px;
 
 /* ------   NAV  MENU STYLE  ---------- */
 .navsec { 
-  background-image: linear-gradient(to top, #9933cc 20%, #9933cc 80%);  
+  background-image: linear-gradient(to top, #4633cc 20%, #93c 80%);
   box-shadow: 0 10px 20px rgba(255, 239, 60 , .3);	 
   width: 100%; height :60px;  display: flex; 
   justify-content: space-around;  align-items: center; }
@@ -94,7 +96,7 @@ nav a:hover { color: yellow;}
 
 /*--------------  WEBSITE IMAGE BANNER  ---------------*/
 
-.banimg { width:100%; margin-bottom: 0px; min-height:100%;  }
+.banimg { width:100%; margin-bottom: -3px; min-height:100%;  }
 
 /*-----------------------------------------------------*/
 
