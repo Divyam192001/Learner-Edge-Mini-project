@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" >
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/js" href="calculator.js">
 </head>
 
 <body>
@@ -29,6 +30,7 @@
 
 <header id="nav">
 <section class="navsec">  
+
 <!-- LOGO SECTION -->
 
 <div class="logo">
@@ -37,15 +39,22 @@
 
 <!-- TOPIC SECTIONS  -->
 <nav>   
-<a href="#"> Home </a>
-<a href="#topic"> Topics </a>
-<a href="#video"> Video </a>
-<a href="#calci"> Calculator </a>
+  <a href="#" style="margin: 2px 123px;"> Home </a>
+  <a href="#topic" style="margin: 2px 24px;"> Topics </a>
+  <a href="#video" style="margin: 2px 86px;"> Video </a>
+  <a href="#calci" style="margin: 0px 0px;"> Calculator </a>
 </nav>
+
+<button class="btn" style="width: 83px;margin: 30px;font-size: 17px;
+font-family: unset;background-color: white;color: black;border: black;
+border-radius: 50px;box-shadow: 2px 2px #ad1919c7;cursor: pointer;height: 30px;">Log Out</button>
+
 </section>
 </div>
+
 </header>
 <!---------------------------------------------------------------------------->
+
 
 <!---------------------------- WEBSITE MAIN IMAGE BANNER  -------------------------->
 <div style=" background-color: #FFEF3C;   " >
@@ -356,7 +365,7 @@
   <h2 id="video" style="text-align: center; color:white;">VIDEO</h2> 
 <br><br>
 
-<video   loop autoplay muted  width="100%"  style="border-radius: 90px;">
+<video   loop autoplay muted   width="100%"  style="border-radius: 90px;">
 <source src="videos/video1.mp4" type="video/mp4" ></video>
 </div>
 
@@ -390,26 +399,27 @@
 <br>
 
 <!--------------------- CALCULATOR JAVASCRIPT  --------------------->
-<script>
-//function for displaying values
-function dis(val)
-{
-document.getElementById("edu").value+=val
- }
-//function for evaluation
-function solve()
-{
-let x = document.getElementById("edu").value
-let y = eval(x)
-document.getElementById("edu").value = y
-}
-//function for clearing the display
-function clr()
-{
-document.getElementById("edu").value = ""
-}
-</script>
 
+<script>
+  //function for displaying values
+  function dis(val)
+  {
+  document.getElementById("edu").value+=val
+   }
+  //function for evaluation
+  function solve()
+  {
+  let x = document.getElementById("edu").value
+  let y = eval(x)
+  document.getElementById("edu").value = y
+  }
+  //function for clearing the display
+  function clr()
+  {
+  document.getElementById("edu").value = ""
+  }
+  </script>
+  
 <!------------------------------------------------------------->
 <!------------------------- CALCULATOR TABLE ----------------------->
 
@@ -437,7 +447,7 @@ document.getElementById("edu").value = ""
 </tr>
 
 <tr>
-<td><input type="button" value="*" onclick="dis('*')"/> </td>
+<td><input type="button" value="" onclick="dis('')"/> </td>
 <td><input type="button" value="7" onclick="dis('7')"/> </td>
 <td><input type="button" value="8" onclick="dis('8')"/> </td>
 <td><input type="button" value="9" onclick="dis('9')"/> </td>
