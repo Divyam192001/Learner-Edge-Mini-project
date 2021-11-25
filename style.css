@@ -27,6 +27,9 @@ p { font-family: arial; }
   background: teal; 
 }
 /*-----------------------------------------------------*/
+.btn :hover{
+  
+}
 
 
  /*----------------- TABLE -------------------*/
@@ -75,16 +78,16 @@ padding-left: 20px;
 /*-------- LOGO SECTION -------*/
 
 .logo img {
-  max-width: 170px;
+  max-width: 174px;
 /* color: #ff0060; */
 padding-right: 226px;
-margin: -23px 26px;
+margin: -24px 26px;
 }
 /* .logo h1{font-family: ;} */
 
 /*-------- NAV TOPIC SECTIONS  -------*/
 
-nav {	width: 60%; display: flex; justify-content:space-between; }
+nav {	width: 60%; display: flex;margin: 2px 60px;}
 nav a {color: white; text-decoration: none; font-family:Arial ;
     font-size: 18px; }
 nav a:hover { color: yellow;}
