@@ -1,321 +1,156 @@
-* { margin: 0; padding: 0; font-family: arial;}
-a { text-decoration: none; }
-p { font-family: arial; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-/* ------ SMOOTH SCROLLING ---------- */
- html {scroll-behavior: smooth;}
-
-
-/* --------------- SCROLL BUTTON STYLE width------------- */
-::-webkit-scrollbar {width: 10px;}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 35px #FFEF3C; 
-  border-radius: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/*search*/
-/* .search-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: red;
-  height: 40px;
-  border-radius: 40px;
-  padding: 10px;
-} */
-
-/* .search-btn:hover {
-  width: 10px;
-  padding: 0 6px;
-}  */
-/* 
-.search-btn{
-  color: #222;
-  float: right;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #2f3640;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-text{
-  border: none;
-  background: none;
-  outline: none;
-  float: left;
-  padding: 0px;
-  color: white;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height:40px ;
-  width: 0px;
-} */
-
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background:#9933cc  ;  
-  border-radius: 10px;
+.container {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: teal; 
-}
-/*-----------------------------------------------------*/
-
-
-
- /*----------------- TABLE -------------------*/
-
-.tbl{ padding: 20px;}
-table {width:100%;}
-table,th,td {border:1px solid black; border-collapse:collapse;}
-th,td {padding:15px; text-align:left;}
-.table th {background-color:orange; color:black;}
-.table tr:nth-child(even){background-color:#eee;}
-.table tr:nth-child(odd) { background-color:#fff;}
-
-/*-----------------------------------------------------*/
-
-
-
-/*--------  FIRST UPPER NAV USING LIST -------*/
-
-ul {
-list-style: none; /* make list horizontal and remove dots */
-background-image:white;
-height: 20px;  line-height: 20px;
-font-size: 15px; font-family: arial;
-padding-left: 20px;
-}
-.uppertablinks a { float: left; padding: 0px 18px; text-decoration: none; color: black;}
-
-
-/*-----------------------------------------------------*/
-
-
-
-/*-----------   MAIN NAVIGATION   ----------*/
-
-/* ------   NAV  STICKY CSS ---------- */
-
-#nav { top:0; position:-webkit-sticky; position:sticky; }
-
-/* ------   NAV  MENU STYLE  ---------- */
-.navsec { 
-  background-image: linear-gradient(to top, #9933cc 20%, #9933cc 80%);  
-  box-shadow: 0 10px 20px rgba(255, 239, 60 , .3);	 
-  width: 100%; height :60px;  display: flex; 
-  justify-content: space-around;  align-items: center; }
-
-/*-------- LOGO SECTION -------*/
-
-.logo img {
-  max-width: 174px;
-/* color: #ff0060; */
-padding-right: 226px;
-margin: -24px 26px;
-}
-/* .logo h1{font-family: ;} */
-
-/*-------- NAV TOPIC SECTIONS  -------*/
-
-nav {	width: 60%; display: flex;margin: 2px 60px;}
-nav a {color: white; text-decoration: none; font-family:Arial ;
-    font-size: 18px; }
-nav a:hover { color: yellow;}
-
-/*-----------------------------------------------------*/
-
-
-
-
-/*--------------  WEBSITE IMAGE BANNER  ---------------*/
-
-.banimg { width:100%; margin-bottom: 0px; min-height:100%;  }
-
-/*-----------------------------------------------------*/
-
-
-
-
-/*  ---------------- MARQUES LATEST NEWS ------------*/
-
-.news{padding: 0px; font-family: arial;  text-align: left;  
-  border-radius: 23px; background-color : #FFEF3C; 
-  margin-left: 100px; margin-bottom: 50px; }
-
-.news a { text-decoration: none;  color :black; align-content: center;}
-.news a:hover{ color: blue;}
-
-/*-----------------------------------------------------*/
-
-
-
-/*---------------------------  WEB CONTENT 1 ------------------------*/
-
-/*---------------------- MOBILE RESPONSIVE -----------------*/
-
-.lft {height:500px; width:40%; float:left; background-color:#9933cc;}
-
-.rgt {height:500px; width:60%; float:left; background-color:#9933cc;}
-
-@media screen and (max-width:800px) {.lft,.rgt {width: 100%;}}
-
-/*-----------------------------------------------------*/
-
-/*-------------- IMAGE BACKGROUND CURVE -----------------*/
-
-.rightside   {
-	border-radius: 72% 28% 70% 30% / 39% 30% 70% 61% ;
-	background: linear-gradient(to right, yellow, #e100ff);
-	margin: 20px;   }
-
-/*-----------------------------------------------------*/
-
-
-
-/*------------------ ABOUT SECTION  -------------------*/
-
-.leftside { font-family: arial; padding: 40px; margin: 30px; 
- border-radius: 50px; width: 70%; height: 60%; }
-
-.leftside .btn1, .btn2 {
-text-decoration: none;
-font-weight: 900;
-font-size: 14px;
-font-family: arial;
-text-align: center;
-padding: 10px 12px;
-cursor: pointer;
-text-transform: uppercase;
-border-radius: 30px;
-display: inline-block;
-margin: 2px;
- transition: 0.6s;
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
 }
 
-.leftside .btn1 {color:#fff;letter-spacing: 0;
-background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%);
-border :double 1px transparent;
-box-shadow: 0 10px 30px rgba (118, 85, 225 , .3);
-
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
 }
 
-.leftside .btn2{border: 1px solid blue; color:#222; 
-	background-color: #fff; box-shadow: none;   }
-
-
-.leftside .btn1:hover {border: 1px solid blue;color:#222;
- background-color: #fff;box-shadow: none;
- background-image: none;   }
-
-.leftside .btn2:hover {color:#fff;letter-spacing: 0;
-	background-image: linear-gradient(to right, #4458dc 0%,  #854fee 100%);border: 0px;}
-
-
-/*------------------------------------------------------------------*/
-
-
-
-/*----------------------- TOPIC CARD  -----------------------*/
-
- .card {
-  box-shadow: 0 4px 8px 0 rgba(255, 29, 60,0.5);
-  transition: 0.6s; 
-  border-radius: 10px;}
-
-.card:hover{
-	border: solid 0px;
-	border-color: orange;
-  box-shadow: 0 10px 20px 0 rgba(1, 213, 217,0.5);}
-
-/*------------------------------------------------------------------*/
-
-
-
-/* ------------ MOBILE RESPONSIVE FOR  OUR TEAM AVATAR -------------- */
-
-.avtr{   width:25%;  display: inline-block; }
-
-@media screen and (max-width: 800px) {.avtr {width: 50%;  height: 100%;}}
-
-/*------------------------------------------------------------*/
-
-
-
-
-
-/*----------------  CALCULATOR  BOX  ----------*/
- .calci
- {
- background-color: #33b5e5;
- height: 480px; 
- font-family: arial;
- padding: 10px; 
- padding-bottom: 10px;   
- display: flex;
- justify-content: space-around;
- }
-
-/*----------------   STYLING FOR CALCULATOR  ----------*/
-
-input[type="button"] {
-height:50px;
-border-radius: 10px;
-background-color:#33b5e5;
-color: black;
-border-color:#33b5e5 ;
-width:70px;
-font-size:20px;
-color:white;
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
 }
 
-input[type="text"] {
-border-radius: 10px;
-text-align: left;
-background-color:white;
-border-color:green;
-width:90%;
-font-size:30px;
-color: red;
+.container .login-social a i {
+    margin-right: 5px;
 }
 
-/*------------------------------------------------------------*/
+.container .login-social a.facebook {
+    background: #4267B2;
+}
 
+.container .login-social a.twitter {
+    background: #1DA1F2;
+}
 
+.container .login-social a.google-plus {
+    background: #db4a39;
+}
 
-/*---------------------- FOOTER ---------------------------*/
+.container .login-social a.linkedin {
+    background: #0e76a8;
+}
 
-/* ------------  MOBILE RESPONSIVE FOR CONTACT FORM -------------- */
+.container .login-social a.facebook:hover {
+    background: #3d5fa3;
+}
 
+.container .login-social a.twitter:hover {
+    background: #1991db;
+}
 
-.mobwid {float:left;  width:50%; height:100%;}
+.container .login-social a.google-plus:hover {
+    background: #ca4334;
+}
 
-@media screen and (max-width: 800px) {.mobwid {width: 100%;} }
+.container .login-social a.linkedin:hover {
+    background: #0b5c81;
+}
 
-/*------------------------------------------------------------*/
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
 
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
 
-/* ------------  COPYRIGHT FOOTER -------------- */ 
+.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
 
-.cpyrgt{
- background-color: #9933cc;
- color: white;
- font-family: arial;
- padding: 10px; 
- padding-bottom: 10px;   
- display: flex;
- justify-content: space-around;
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
 
- }
- 
-/*------------------------------------------------------------*/
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+}
